@@ -1,5 +1,15 @@
 <template>
   <main>
+    <nav id="contact">
+      <p>Contact me:</p>
+      <a href="https://www.linkedin.com/in/matias-leitner-05b1241b5/" target="_blank" style="color: blue" class="contact-link">
+        <v-icon name="pr-linkedin" :scale="1.8" />
+      </a>
+      <a href="https://github.com/leitnermatias" target="_blank" style="color: black" class="contact-link">
+        <v-icon name="bi-github" :scale="1.8" />
+      </a>
+    </nav>
+
     <section>
       <p class="typer" v-html="lines"></p>
     </section>
@@ -97,6 +107,20 @@ async function handleLine(line: string) {
   color: #313638;
   font-weight: bold;
   text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  position: sticky;
+  top: 0;
+  background-color: #E8E9EB;
+}
+
+nav p {
+  color: #313638;
+  font-weight: bolder;
 }
 
 

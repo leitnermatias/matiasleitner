@@ -50,4 +50,9 @@ defineProps<{
   padding-left: 1em;
 
 }
+
+.icons {
+    display: flex;
+    gap: 1.5em;
+}
 </style>
