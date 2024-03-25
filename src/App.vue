@@ -6,43 +6,30 @@
     <section id="projects">
       <h1 class="title">My projects</h1>
 
-      <div class="project">
-        <h2 class="project-title">
-          Autobattler
-        </h2>
-        <div class="icons">
-          <a href="https://github.com/leitnermatias/autobattler" class="icon" target="_blank">
-            <v-icon name="bi-github" :scale="1.5"/>
-          </a>
-          <a href="https://autobattler.matiasleitner.com" class="icon" target="_blank">
-            <v-icon name="oi-link-external" :scale="1.5"/>
-          </a>
-        </div>
-        
-        <p class="project-description">
-          A game that plays itself, targeting random enemies and progressing the player through levels
-        </p>
-       
-      </div>
+      <Project 
+      title="Autobattler"
+      github="https://github.com/leitnermatias/autobattler"
+      link="https://autobattler.matiasleitner.com"
+      description="A game that plays itself, targeting random enemies and progressing the player through levels"
+      />
 
-      <div class="project">
-        <h2 class="project-title">
-          Portfolio
-        </h2>
-        <div class="icons">
-          <a href="https://github.com/leitnermatias/autobattler" class="icon" target="_blank">
-            <v-icon name="bi-github" :scale="1.5"/>
-          </a>
-          <a href="https://autobattler.matiasleitner.com" class="icon" target="_blank">
-            <v-icon name="oi-link-external" :scale="1.5"/>
-          </a>
-        </div>
-        
-        <p class="project-description">
-          This site.
-        </p>
-       
-      </div>
+      <Project 
+      title="Diarios API"
+      github="https://github.com/leitnermatias/diarios"
+      description="A standalone API that scrapes different news outlets from Argentina."
+      />
+
+      <Project 
+      title="MatiOS"
+      github="https://github.com/leitnermatias/matios"
+      description="A simple operative system implemented as a page."
+      />
+
+      <Project 
+      title="Portfolio"
+      github="https://github.com/leitnermatias/matiasleitner"
+      description="This site."
+      />
       
     </section>
   </main>
@@ -50,6 +37,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
+import Project from "./components/Project.vue"
 
 
 const text = [
@@ -105,29 +93,11 @@ async function handleLine(line: string) {
   gap: 2em;
 }
 
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: #313638;
-  border-left: 5px solid #F09D51;
-  padding-left: 1em;
-
-}
-
 .title {
   color: #313638;
   font-weight: bold;
   text-align: center;
 }
 
-.project-title {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
 
-.icon {
-  color: black;
-}
 </style>
