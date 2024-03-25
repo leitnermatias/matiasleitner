@@ -92,9 +92,10 @@ async function handleLine(line: string) {
 .typer {
   background-color: #121420;
   color: rgb(0, 255, 0);
-  height: 250px;
   padding: 10px;
   border-radius: 10px;
+  width: 300px;
+  margin: auto;
 }
 
 #projects {
@@ -123,5 +124,20 @@ nav p {
   font-weight: bolder;
 }
 
+@media only screen and (min-width : 1025px) { 
+  #projects {
+    width: 600px;
+    margin: auto;
+  }
+  
+  .typer {
+    width: 400px;
+  }
+
+  nav {
+    width: 650px;
+    margin: auto;
+  }
+}
 
 </style>
