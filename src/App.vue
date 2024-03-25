@@ -13,8 +13,8 @@
     <section>
       <p class="typer" v-html="lines"></p>
     </section>
+    <h1 class="title">My projects</h1>
     <section id="projects">
-      <h1 class="title">My projects</h1>
 
       <Project 
       title="Autobattler"
@@ -126,8 +126,10 @@ nav p {
 
 @media only screen and (min-width : 1025px) { 
   #projects {
-    width: 600px;
+    width: 800px;
     margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   
   .typer {

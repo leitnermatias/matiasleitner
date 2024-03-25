@@ -55,4 +55,10 @@ defineProps<{
     display: flex;
     gap: 1.5em;
 }
+
+@media only screen and (min-width : 1025px) { 
+    .project {
+        width: 350px
+    }
+}
 </style>
